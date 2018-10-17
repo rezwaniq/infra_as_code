@@ -1,0 +1,24 @@
+#Provide details to create Virtual Private GW#
+vpg_detail:
+    AmazonSideAsn: 65000 
+#Virtual Pri GW will be associated to this VPC. Recommended to use Default VPC. If you are not using Default VPC then make sure that your VPC has correct subnet/IGW etc#
+vpc_detail: 
+    def_vpc_id: vpc-c5ca93a2
+#This script can Accept all your connection automatically. Make sure your connection names in NFV portals have matching pattern"
+your_direct_conn_detail:
+    conn_match_pattern: easy
+dc_gw:
+    name: rezwan121
+virtual_int_detail:
+    connectionId: dxcon-fh45cvo0
+    ownerAccount: 357848976964
+    dc_name: NSD_AWS_SV_TEST
+    asn: 1000
+    virtualInterfaceName: rezwan121_vir_conn
+    authKey: bgpkey
+    amazonAddress: 100.0.0.1/30
+    customerAddress: 100.0.0.2/30
+vm_detail:
+    keyname: testuser_key
+    securitygroupid: sg-05d53611c9c387705
+    SubnetId: subnet-717e5b2a
